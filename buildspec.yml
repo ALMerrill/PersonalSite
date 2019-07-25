@@ -14,6 +14,3 @@ phases:
   build:
     commands:
       - yarn build:$ENVIRONMENT
-  post_build:
-    commands:
-      - aws s3 sync ./build $S3_BUCKET
