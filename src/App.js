@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Andrew</h1>9{" "}
+        <h1>Andrew</h1>
         <p>
           Hi - this is the start of my personal site. It is automatically
           deployed through AWS S3 each time I commit new code to GitHub.

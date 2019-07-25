@@ -8,6 +8,10 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "start:dev": "sh -ac '. ./.env.development; react-scripts start';",
+    "build:dev": "sh -ac '. ./.env.development; react-scripts build';",
+    "build:stage": "sh -ac '. ./.env.staging; react-scripts build';",
+    "build:prod": "sh -ac '. ./.env.production; react-scripts build';",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
