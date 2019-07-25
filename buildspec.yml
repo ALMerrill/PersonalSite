@@ -16,7 +16,8 @@ phases:
       - yarn build:$ENVIRONMENT
   post_build:
     commands:
+      - echo Accessing bucket ${S3_BUCKET}
       - aws s3 rm s3://${S3_BUCKET} --recursive
       - echo S3 bucket is cleared.
-      - aws s3 cp build s3://${S3_BUCKET} --recursive
+      - aws s3 sync ./build s3://${S3_BUCKET}
       - echo Build completed on `date`
