@@ -1,7 +1,12 @@
 import React from "react";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
+  let info = {
+    name: "Andrew Merrill",
+    repo: "https://github.com/ALMerrill/PersonalSite"
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -15,6 +20,7 @@ function App() {
           myself now that I have most of the pipeline set up.
         </p>
       </header>
+      <Footer personalInfo={info} />
     </div>
   );
 }

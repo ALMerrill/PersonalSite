@@ -1,0 +1,48 @@
+// @import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+// @import url(https://fonts.googleapis.com/css?family=Bitter);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+// @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+// $main-bg-color: #eee9e9;
+$accent-blue: #37bbe4;
+// $accent-gray: #e1e0dd;
+$accent-black: #35342f;
+$accent-orange: #ec6b2d;
+$accent-red: #dd6464;
+// $project-container-color: #ece9df;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  font-size: 1em;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: white;
+  background-color: $accent-black;
+
+  a {
+    text-decoration: none;
+    color: $accent-orange;
+
+    &:hover {
+      color: $accent-blue;
+    }
+  }
+
+  #heart {
+    color: $accent-red;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
