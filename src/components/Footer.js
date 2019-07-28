@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <span id="footer-text-wrap">
-          This site is in development by {personalInfo.name} Checkout the
+          This site is in development by {personalInfo.name}. Checkout the
           <a href={personalInfo.repo}> repo</a>.
         </span>
       </footer>
