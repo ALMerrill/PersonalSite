@@ -4,7 +4,9 @@ Gatsby.js V2 starter template based on Resume by startbootstrap
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
-Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-resume/)
+# Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-resume/)
+
+### `yarn start`
 
 ## Screenshot
 
@@ -12,11 +14,19 @@ Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-r
 
 ## Install
 
+=======
+
+### `yarn test`
+
 Make sure that you have the Gatsby CLI program installed:
 
 ```sh
 npm install --global gatsby-cli
 ```
+
+=======
+
+### `yarn build`
 
 And run from your CLI:
 
@@ -71,4 +81,6 @@ Please create issue or open PR request for contribution.
 
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
-refer `LICENSE` file in this repository.
+# refer `LICENSE` file in this repository.
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
