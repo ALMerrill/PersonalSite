@@ -1,6 +1,6 @@
 # Personal Website
 
-This is my personal resume and project website, built using Gatsby.js from a starter template. It can be seen at me.amerrill.com
+This is my personal resume and project website, built using Gatsby.js from a starter template. It can be seen at [me.amerrill.com](me.amerrill.com)
 
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
