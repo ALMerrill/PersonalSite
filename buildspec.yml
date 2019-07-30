@@ -6,6 +6,7 @@ phases:
       nodejs: 10
     commands:
       - npm i yarn@latest -g
+      - yarn add gatsby
       - pip install --upgrade pip
       - pip install --upgrade awscli
   pre_build:
@@ -13,11 +14,11 @@ phases:
       - yarn
   build:
     commands:
-      - yarn build:$ENVIRONMENT
+      - yarn build
   post_build:
     commands:
       - echo Accessing bucket ${S3_BUCKET}
       - aws s3 rm s3://${S3_BUCKET} --recursive
       - echo S3 bucket is cleared.
-      - aws s3 sync ./build s3://${S3_BUCKET}
+      - aws s3 sync ./public s3://${S3_BUCKET} --delete
       - echo Build completed on `date`
