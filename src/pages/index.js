@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 
-import Sidebar from '../components/Sidebar';
-import config from '../../config';
+import Sidebar from "../components/Sidebar";
+import config from "../../config";
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -52,15 +52,16 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Research Assistant</h3>
+              <h3 className="mb-0">Computer Vision Research Assistant</h3>
               <div className="subheading mb-3">BYU, Provo, Utah</div>
               <p>
-                Building computer vision models with PyTorch to perform
-                fine-tuned classification of moth and fish species
+                Built and used a deployed system to gather video data. Now
+                working on building models in Pytorch to be used for live
+                detection and classification in an AI on the edge setting
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">May 2019 - Present</span>
+              <span className="text-primary">April 2019 - Present</span>
             </div>
           </div>
 
@@ -71,9 +72,9 @@ const IndexPage = () => (
                 Facebook, Seattle, Washington
               </div>
               <p>
-                Independently built an internal tool built in React that will be
-                used by a large team of developers and researchers to improve
-                traffic quality on the Facebook app
+                Built an internal tool in React and 3D rendering libraries that
+                will be used by a team of 50 developers and researchers to
+                improve traffic quality on the Facebook app
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -88,12 +89,12 @@ const IndexPage = () => (
                 MasterControl, Salt Lake City, Utah
               </div>
               <p>
-                Participated on a team helping to release the new beta
-                manufacturing software using Angular and Java
+                Helped reach the beta software release deadline by adding and
+                improving features using Java and Angular
               </p>
               <p>
-                Improved automated tests in Selenium WebDriver, making the
-                deployment pipeline 10 times faster
+                Increased the speed of code deployment by a factor of 10 by
+                improving automated Selenium Webdriver tests in the pipeline
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -131,16 +132,44 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
+              <h3 className="mb-0">Scrabble Definition Generator Web App</h3>
+              {/* <div className="subheading mb-3">
+                Finding verses of similar topic throughout the scriptures
+              </div> */}
+              <p>
+                Used Natural Language Processing in Python to generate a fake
+                word and definition given a player’s Scrabble letters. This was
+                done inside a Flask server with an API
+              </p>
+              <p>
+                Built a simple front-end in React for the user to input letters
+                and receive a definition
+              </p>
+            </div>
+            <div className="resume-date text-md-right">
+              <a href={config.githubText.url}>
+                <i className={`fab fa-github`}> Repo</i>
+              </a>
+            </div>
+          </div>
+
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
               <h3 className="mb-0">Text analysis program</h3>
               <div className="subheading mb-3">
                 Finding verses of similar topic throughout the scriptures
               </div>
               <p>
-                Used Word2Vec and Numpy in Python to compare words as vectors in
-                multidimensional space
+                Gathered and preprocessed full books of text in order to convert
+                words and phrases to vector space
               </p>
               <p>
-                Implemented expectation maximization to find clusters of topics
+                Compared words as vectors in multidimensional space using
+                Word2Vec and Numpy libraries in Python
+              </p>
+              <p>
+                Implemented multidimensional clustering to find topic
+                similarities throughout the tex
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -198,14 +227,13 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Web scraper script</h3>
               <div className="subheading mb-3">
-                automated script to grab and modify most recent class notes from
+                Automated script to grab and modify most recent class notes from
                 the course website
               </div>
               <p>
-                Ran automatically each day before class using crontab to grab
-                newest notes
+                Automatically scraped plain text notes, formatted to HTML and
+                imported into Apple Notes before class each day
               </p>
-              <p>HTML formatted to import into Apple Notes</p>
             </div>
             <div className="resume-date text-md-right">
               <a href={config.githubScraper.url}>
@@ -271,10 +299,14 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">BYU Developers Club</h3>
               <div className="subheading mb-3">Vice President</div>
-              <p>Helped organize and run a hackathon for local Non-profits</p>
               <p>
-                Created a Slack bot to post job opportunities from local
-                businesses
+                Helped organize and run a hackathon for three local nonprofits,
+                building software for them to improve day to day activities and
+                helping with their websites
+              </p>
+              <p>
+                Created a Slack bot to automatically post job opportunities from
+                local businesses
               </p>
             </div>
             <div className="resume-date text-md-right">
